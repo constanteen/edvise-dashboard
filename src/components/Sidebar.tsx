@@ -6,7 +6,7 @@ export default function Sidebar() {
 	return (
 		<div
 			id="sidebar"
-			className="bg-white h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out fixed"
+			className="bg-white h-screen md:block shadow-xl w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out fixed"
 			x-show="sidenav"
 		>
 			<div className="space-y-6 md:space-y-6 mt-10">
@@ -51,26 +51,32 @@ export default function Sidebar() {
 				<div className="divide-y-2 divide-gray-100">
 					<div id="menu" className="flex flex-col space-y-2 mt-4">
 						{topSidebarOptions.map((option) => (
-							<a
-								href=""
-								className="text-sm font-light text-secondary-text py-4 rounded-xl px-2 hover:bg-light-blue hover:text-dark-blue flex items-center"
-								key={nanoid()}
-							>
-								<span className="mx-3">{option.icon}</span>
-								<span className="">{option.title}</span>
-							</a>
+							<div className="flex group items-center">
+								<span className="group-hover:border-4 h-8 rounded-3xl border-transparent border-4 -ml-1 group-hover:border-dark-blue mr-3"></span>
+								<a
+									href=""
+									className="text-sm font-light text-secondary-text py-4 rounded-xl px-3 w-11/12 hover:bg-light-blue hover:text-dark-blue flex items-center"
+									key={nanoid()}
+								>
+									<span className="mx-3">{option.icon}</span>
+									<span className="">{option.title}</span>
+								</a>
+							</div>
 						))}
 					</div>
 					<div id="menu" className="flex flex-col space-y-2 my-2 py-2">
 						{bottomSidebarOptions.map((option) => (
-							<a
-								href=""
-								className="text-sm font-light text-secondary-text py-2 px-2 hover:bg-light-blue hover:text-dark-blue flex items-center"
-								key={nanoid()}
-							>
-								<span className="mx-3">{option.icon}</span>
-								<span className="">{option.title}</span>
-							</a>
+							<div className="flex group items-center">
+								<span className="group-hover:border-4 h-8 rounded-3xl border-transparent border-4 -ml-1 group-hover:border-dark-blue mr-3"></span>
+								<a
+									href=""
+									className="text-sm font-light text-secondary-text py-4 rounded-xl px-3 w-11/12 hover:bg-light-blue hover:text-dark-blue flex items-center"
+									key={nanoid()}
+								>
+									<span className="mx-3">{option.icon}</span>
+									<span className="">{option.title}</span>
+								</a>
+							</div>
 						))}
 					</div>
 				</div>
