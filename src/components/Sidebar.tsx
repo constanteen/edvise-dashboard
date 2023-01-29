@@ -10,7 +10,7 @@ export default function Sidebar() {
 			x-show="sidenav"
 		>
 			<div className="space-y-6 md:space-y-6 mt-10">
-				<div className="ml-4">
+				<div className="ml-8">
 					<svg
 						width="111"
 						height="34"
