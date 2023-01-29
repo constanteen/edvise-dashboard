@@ -13,7 +13,7 @@ export default function DropdownMenu() {
 						key={nanoid()}
 						className="px-4 py-2 text-sm capitalize text-gray-700 hover:bg-light-blue"
 					>
-						<label htmlFor={`filter-option-${option}`} className="flex items-center ">
+						<label htmlFor={`filter-option-${option}`} className="flex items-center">
 							<input type="checkbox" id={`filter-option-${option}`} className="-ml-3" />
 							<span className="ml-3">{option}</span>
 						</label>
